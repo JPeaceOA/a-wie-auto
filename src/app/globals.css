@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #E8001D;
+  --color-brand-primary-dim: #9E0013;
+  --color-brand-accent: #4A00FF;
+  --color-brand-secondary: #8B0035;
+  --color-brand-tertiary: #2E2E35;
+  --color-brand-silver: #A8AABD;
+  --color-brand-dark: #0A0A0F;
+  --color-brand-card: #12121A;
+  --color-brand-mid: #1A1A24;
+  --color-brand-muted: #5A5A70;
+  --font-orbitron: var(--font-orbitron), monospace;
+  --font-rajdhani: var(--font-rajdhani), sans-serif;
+  --font-inter: var(--font-inter), sans-serif;
+}
+
+:root {
+  --primary: #E8001D;
+  --primary-dim: #9E0013;
+  --accent: #4A00FF;
+  --secondary: #8B0035;
+  --tertiary: #2E2E35;
+  --silver: #A8AABD;
+  --bg-dark: #0A0A0F;
+  --bg-card: #12121A;
+  --bg-mid: #1A1A24;
+  --text-primary: #F0F0F0;
+  --text-secondary: #A8AABD;
+  --text-muted: #5A5A70;
+  --border: rgba(232, 0, 29, 0.15);
+  --border-bright: rgba(232, 0, 29, 0.5);
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: #0A0A0F;
+  color: #F0F0F0;
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
+  background-image:
+    linear-gradient(rgba(232, 0, 29, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(232, 0, 29, 0.035) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0F;
+}
+::-webkit-scrollbar-thumb {
+  background: #E8001D;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff1f3d;
+}
+
+/* Sci-fi Parallelogram Button Clip */
+.clip-parallelogram {
+  clip-path: polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
+}
+
+.clip-parallelogram-sm {
+  clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+}
+
+.clip-diamond {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+/* HUD Scan Line */
+@keyframes scanline {
+  0% { top: -5%; opacity: 0; }
+  15% { opacity: 0.35; }
+  85% { opacity: 0.35; }
+  100% { top: 105%; opacity: 0; }
+}
+
+.animate-scanline {
+  animation: scanline 7s linear infinite;
+}
+
+/* Ticker Scroll Animation */
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-ticker {
+  display: flex;
+  width: max-content;
+  animation: ticker 32s linear infinite;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+
+/* Pulsing Glow */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 14px rgba(232, 0, 29, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 28px rgba(232, 0, 29, 0.75), 0 0 50px rgba(232, 0, 29, 0.3);
+  }
+}
+
+.animate-glow-pulse {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+/* Subtle Floating */
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: floatY 4s ease-in-out infinite;
+}
+
+/* Text outline stroke for hero */
+.text-stroke-silver {
+  -webkit-text-stroke: 1.5px rgba(168, 170, 189, 0.45);
+  color: transparent;
+}

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AWIEwagen — Personenkraftwagen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════════ -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">AWIE<span>wagen</span></a>
+      <ul class="nav-links">
+        <li><a href="#fleet">Fleet</a></li>
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Test Drive</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════
+       HERO
+  ════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">AWIEwagen Autohaus · Est. 1993</p>
+      <h1>
+        Precision.<br />
+        <span class="ghost">Power.</span><br />
+        Legend.
+      </h1>
+      <p class="hero-sub">
+        We don't sell cars. We place precision instruments into the hands
+        of people who demand more from the road.
+      </p>
+      <div class="hero-actions">
+        <a href="#fleet" class="btn-primary">Explore the Fleet</a>
+        <a href="#contact" class="btn-outline">Book a Test Drive</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">127+</span>
+          <span class="stat-label">Vehicles in Stock</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">18</span>
+          <span class="stat-label">Premium Brands</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">32</span>
+          <span class="stat-label">Years of Service</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">4.97</span>
+          <span class="stat-label">Customer Rating</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       TICKER
+  ════════════════════════════════════ -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker">
+      <span>Models in Stock <strong>127+</strong></span>
+      <span class="dot"></span>
+      <span>Brands <strong>18</strong></span>
+      <span class="dot"></span>
+      <span>Avg Delivery <strong>14 Days</strong></span>
+      <span class="dot"></span>
+      <span>Customer Rating <strong>4.97 ★</strong></span>
+      <span class="dot"></span>
+      <span>Years of Excellence <strong>32</strong></span>
+      <span class="dot"></span>
+      <!-- duplicated for seamless loop -->
+      <span>Models in Stock <strong>127+</strong></span>
+      <span class="dot"></span>
+      <span>Brands <strong>18</strong></span>
+      <span class="dot"></span>
+      <span>Avg Delivery <strong>14 Days</strong></span>
+      <span class="dot"></span>
+      <span>Customer Rating <strong>4.97 ★</strong></span>
+      <span class="dot"></span>
+      <span>Years of Excellence <strong>32</strong></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════
+       FLEET
+  ════════════════════════════════════ -->
+  <section class="section" id="fleet">
+    <div class="section-header">
+      <p class="section-label">Our Fleet</p>
+      <h2>Engineered for those who expect everything.</h2>
+    </div>
+
+    <!-- Category filter -->
+    <div class="filter-bar" id="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="sedan">Sedan</button>
+      <button class="filter-btn" data-filter="sports">Sports</button>
+      <button class="filter-btn" data-filter="suv">SUV</button>
+      <button class="filter-btn" data-filter="electric">Electric</button>
+      <button class="filter-btn" data-filter="supercar">Supercar</button>
+      <button class="filter-btn" data-filter="luxury">Luxury</button>
+    </div>
+
+    <!-- Car grid -->
+    <div class="car-grid" id="car-grid">
+
+      <article class="car-card" data-category="sedan">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=700&q=80" alt="Audi Phantom X9" loading="lazy" />
+          <span class="badge">New Arrival</span>
+        </div>
+        <div class="card-body">
+          <p class="card-brand">Audi</p>
+          <h3 class="card-name">Phantom X9</h3>
+          <p class="card-tag">"Silence is the new roar."</p>
+          <div class="card-specs">
+            <div class="spec"><span class="spec-val">2.9s</span><span class="spec-key">0–100</span></div>
+            <div class="spec"><span class="spec-val">280 km/h</span><span class="spec-key">Top Speed</span></div>
+            <div class="spec"><span class="spec-val">700 hp</span><span class="spec-key">Power</span></div>
+          </div>
+        </div>
+        <div class="card-foot">
+          <span class="card-price">€142,000</span>
+          <span class="card-cta">View Details →</span>
+        </div>
+      </article>
+
+      <article class="car-card" data-category="sports">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=700&q=80" alt="BMW Tempest GTR" loading="lazy" />
+          <span class="badge">Track Edition</span>
+        </div>
+        <div class="card-body">
+          <p class="card-brand">BMW</p>
+          <h3 class="card-name">Tempest GTR</h3>
+          <p class="card-tag">"Born on the Nürburgring."</p>
+          <div class="card-specs">
+            <div class="spec"><span class="spec-val">3.2s</span><span class="spec-key">0–100</span></div>
+            <div class="spec"><span class="spec-val">320 km/h</span><span class="spec-key">Top Speed</span></div>
+            <div class="spec"><span class="spec-val">625 hp</span><span class="spec-key">Power</span></div>
+          </div>
+        </div>
+        <div class="card-foot">
+          <span class="card-price">€198,500</span>
+          <span class="card-cta">View Details →</span>
+        </div>
+      </article>
+
+      <article class="car-card" data-category="suv">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=700&q=80" alt="Mercedes Vela Noir" loading="lazy" />
+          <span class="badge">Best Seller</span>
+        </div>
+        <div class="card-body">
+          <p class="card-brand">Mercedes-Benz</p>
+          <h3 class="card-name">Vela Noir</h3>
+          <p class="card-tag">"Command the road. Question nothing."</p>
+          <div class="card-specs">
+            <div class="spec"><span class="spec-val">3.7s</span><span class="spec-key">0–100</span></div>
+            <div class="spec"><span class="spec-val">290 km/h</span><span class="spec-key">Top Speed</span></div>
+            <div class="spec"><span class="spec-val">630 hp</span><span class="spec-key">Power</span></div>
+          </div>
+        </div>
+        <div class="card-foot">
+          <span class="card-price">€176,000</span>
+          <span class="card-cta">View Details →</span>
+        </div>
+      </article>
+
+      <article class="car-card" data-category="electric">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?w=700&q=80" alt="Porsche Corvus EV" loading="lazy" />
+          <span class="badge">Electric</span>
+        </div>
+        <div class="card-body">
+          <p class="card-brand">Porsche</p>
+          <h3 class="card-name">Corvus EV</h3>
+          <p class="card-tag">"The future is flat-floor and fast."</p>
+          <div class="card-specs">
+            <div class="spec"><span class="spec-val">2.8s</span><span class="spec-key">0–100</span></div>
+            <div class="spec"><span class="spec-val">590 km</span><span class="spec-key">Range</span></div>
+            <div class="spec"><span class="spec-val">761 hp</span><span class="spec-key">Power</span></div>
+          </div>
+        </div>
+        <div class="card-foot">
+          <span class="card-price">€164,000</span>
+          <span class="card-cta">View Details →</span>
+        </div>
+      </article>
+
+      <article class="car-card" data-category="supercar">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=700&q=80" alt="Lamborghini Obsidian Ultra" loading="lazy" />
+          <span class="badge">Limited — 200 Units</span>
+        </div>
+        <div class="card-body">
+          <p class="card-brand">Lamborghini</p>
+          <h3 class="card-name">Obsidian Ultra</h3>
+          <p class="card-tag">"Excess, perfected."</p>
+          <div class="card-specs">
+            <div class="spec"><span class="spec-val">2.5s</span><span class="spec-key">0–100</span></div>
+            <div class="spec"><span class="spec-val">355 km/h</span><span class="spec-key">Top Speed</span></div>
+            <div class="spec"><span class="spec-val">830 hp</span><span class="spec-key">Power</span></div>
+          </div>
+        </div>
+        <div class="card-foot">
+          <span class="card-price">€398,000</span>
+          <span class="card-cta">View Details →</span>
+        </div>
+      </article>
+
+      <article class="car-card" data-category="luxury">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1636633762833-5d1658f1e29b?w=700&q=80" alt="Rolls-Royce Argent One" loading="lazy" />
+          <span class="badge">Bespoke</span>
+        </div>
+        <div class="card-body">
+          <p class="card-brand">Rolls-Royce</p>
+          <h3 class="card-name">Argent One</h3>
+          <p class="card-tag">"Not driven. Conveyed."</p>
+          <div class="card-specs">
+            <div class="spec"><span class="spec-val">4.6s</span><span class="spec-key">0–100</span></div>
+            <div class="spec"><span class="spec-val">250 km/h</span><span class="spec-key">Top Speed</span></div>
+            <div class="spec"><span class="spec-val">571 hp</span><span class="spec-key">Power</span></div>
+          </div>
+        </div>
+        <div class="card-foot">
+          <span class="card-price">€580,000</span>
+          <span class="card-cta">View Details →</span>
+        </div>
+      </article>
+
+    </div><!-- /car-grid -->
+  </section>
+
+  <!-- ═══════════════════════════════════
+       FEATURED
+  ════════════════════════════════════ -->
+  <section class="featured" id="featured">
+    <div class="featured-inner">
+      <div class="featured-content">
+        <p class="section-label">Featured Vehicle</p>
+        <h2>Lamborghini<br />Obsidian Ultra</h2>
+        <p class="featured-quote">"Excess, perfected."</p>
+        <p class="featured-desc">
+          Naturally aspirated. Rear-wheel drive. Manual gearbox optional.
+          A car that refuses to be domesticated in an era of driver aids
+          and electric motors. One of 200 built.
+        </p>
+        <a href="#contact" class="btn-primary">Request a Quote</a>
+      </div>
+      <div class="featured-specs">
+        <div class="feat-spec">
+          <span class="feat-val">2.5s</span>
+          <span class="feat-key">0–100 km/h</span>
+        </div>
+        <div class="feat-spec">
+          <span class="feat-val">355 km/h</span>
+          <span class="feat-key">Top Speed</span>
+        </div>
+        <div class="feat-spec">
+          <span class="feat-val">830 hp</span>
+          <span class="feat-key">Power</span>
+        </div>
+        <div class="feat-spec">
+          <span class="feat-val">6.5L V12</span>
+          <span class="feat-key">Engine</span>
+        </div>
+        <div class="feat-price">
+          <span class="label">Starting From</span>
+          <span class="price">€398,000</span>
+          <span class="sub">Limited · 200 Units</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       CONTACT
+  ════════════════════════════════════ -->
+  <section class="section" id="contact">
+    <div class="section-header">
+      <p class="section-label">Get in Touch</p>
+      <h2>The fleet is ready.<br />Are you?</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="ci-label">Phone</span>
+          <span class="ci-val">+49 69 123 456 78</span>
+        </div>
+        <div class="contact-item">
+          <span class="ci-label">Email</span>
+          <span class="ci-val">fleet@awiewagen.de</span>
+        </div>
+        <div class="contact-item">
+          <span class="ci-label">Address</span>
+          <span class="ci-val">Kaiserstrasse 88, Frankfurt</span>
+        </div>
+        <div class="contact-item">
+          <span class="ci-label">Hours</span>
+          <span class="ci-val">Mon–Sat · 09:00–19:00</span>
+        </div>
+      </div>
+      <form class="contact-form" action="#" method="post">
+        <div class="form-row">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="fname" placeholder="Klaus" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-row">
+          <label for="interest">Vehicle of Interest</label>
+          <select id="interest" name="interest">
+            <option value="">— Select a model —</option>
+            <option>Phantom X9 (Audi)</option>
+            <option>Tempest GTR (BMW)</option>
+            <option>Vela Noir (Mercedes-Benz)</option>
+            <option>Corvus EV (Porsche)</option>
+            <option>Obsidian Ultra (Lamborghini)</option>
+            <option>Argent One (Rolls-Royce)</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="msg">Message</label>
+          <textarea id="msg" name="msg" rows="4" placeholder="I'd like to arrange a test drive..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Enquiry</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       FOOTER
+  ════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="logo">AWIE<span>wagen</span></p>
+        <p class="footer-desc">Germany's finest automotive collective.<br />Headquartered in Frankfurt.</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Fleet</p>
+        <ul>
+          <li><a href="#fleet">Sedans</a></li>
+          <li><a href="#fleet">Sports</a></li>
+          <li><a href="#fleet">SUVs</a></li>
+          <li><a href="#fleet">Electric</a></li>
+          <li><a href="#fleet">Supercars</a></li>
+          <li><a href="#fleet">Luxury</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Services</p>
+        <ul>
+          <li><a href="#">Test Drive</a></li>
+          <li><a href="#">Finance</a></li>
+          <li><a href="#">Insurance</a></li>
+          <li><a href="#">Trade-In</a></li>
+          <li><a href="#">Servicing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Legal</p>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Imprint</a></li>
+          <li><a href="#">Cookie Settings</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 AWIEwagen GmbH · All rights reserved.</span>
+      <span>Kaiserstrasse 88, Frankfurt am Main</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
